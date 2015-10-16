@@ -51,3 +51,7 @@ Template.mytemplate.helpers({
     },
 });
 ```
+
+## License
+
+MIT
