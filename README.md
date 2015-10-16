@@ -13,7 +13,7 @@ meteor add filedrop
 
 In your HTML:
 
-```
+```html
 <div class="dropzone">
   {{> filedrop dropHandlers}}
   
@@ -37,7 +37,7 @@ In your HTML:
 
 To respond to events, most importantly of course the `onDrop` event, you need to specify a helper function that return an object containing the handler functions.
 
-```
+```javascript
 Template.mytemplate.helpers({
     dropHandlers: function() {
         return {
