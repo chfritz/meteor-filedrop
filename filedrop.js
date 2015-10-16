@@ -1,6 +1,5 @@
 // Write your package code here!
 
-
 var state;
 Template.filedrop.onCreated(function() {
     /* reactive var for state:
