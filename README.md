@@ -15,7 +15,7 @@ In your HTML:
 
 ```html
 {{#filedrop dropHandlers}}
-  <div class="ui segment {{#if filedrop_over}} red {{else}} {{#if filedrop_window}} orange {{/if}} {{/if}}">
+<div class="ui segment {{#if filedrop_over}} red {{else}} {{#if filedrop_window}} orange {{/if}} {{/if}}">
   
   {{#if filedrop_over}}
     Drop it, Drop it, Drop it!
