@@ -12,7 +12,7 @@ Template.filedrop.helpers({
     'all': function() {
         // We need to manualy hand our desired helpers down to our children.
         // A usual, we are giving "all" to our children :-) (see template)
-        return _.extend(Template.instance(), {
+        return _.extend(Template.instance(), _.extend(Template.instance().data, {
             'filedrop_over': function() {
                 return (this.state && this.state.get() == 'over');    
             },
@@ -20,7 +20,7 @@ Template.filedrop.helpers({
                 return (this.state && this.state.get() == 'window');    
             },
             state: Template.instance().state
-        });
+        }) );
     }
 });
 
