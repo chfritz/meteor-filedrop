@@ -18,12 +18,12 @@ In your HTML:
 <div class="ui segment {{#if filedrop_over}} red {{else}} {{#if filedrop_window}} orange {{/if}} {{/if}}">
   
   {{#if filedrop_over}}
-    Drop it, Drop it, Drop it!
+    OK, you can drop it now!
   {{else}}
   {{#if filedrop_window}}
-    Drop Files, please!
+    Over here please!
   {{else}}
-    Drop Files      
+    Drop Files Here      
   {{/if}}
   {{/if}}
 </div>
