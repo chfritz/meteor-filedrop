@@ -14,25 +14,20 @@ meteor add filedrop
 In your HTML:
 
 ```html
-<div class="dropzone">
-  {{> filedrop dropHandlers}}
+{{#filedrop dropHandlers}}
+  <div class="ui segment {{#if filedrop_over}} red {{else}} {{#if filedrop_window}} orange {{/if}} {{/if}}">
   
   {{#if filedrop_over}}
-  <div class="ui segment red">
     Drop it, Drop it, Drop it!
-  </div>
   {{else}}
   {{#if filedrop_window}}
-  <div class="ui segment orange">
     Drop Files, please!
-  </div>
   {{else}}
-  <div class="ui segment">
     Drop Files      
-  </div>
   {{/if}}
   {{/if}}
 </div>
+{{/filedrop}}
 ```
 
 To respond to events, most importantly of course the `onDrop` event, you need to specify a helper function that return an object containing the handler functions.
