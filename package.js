@@ -1,6 +1,6 @@
 Package.describe({
     name: 'chfritz:filedrop',
-    version: '0.0.4',
+    version: '0.0.5',
     // Brief, one-line summary of the package.
     summary: 'An easy to use file drag&drop element with hooks.',
     // URL to the Git repository containing the source code for this package.
@@ -13,6 +13,7 @@ Package.describe({
 Package.onUse(function(api) {
     api.versionsFrom('1.2.0.2');
     api.use('ecmascript');
+    api.use('reactive-var', 'client')
     api.use('templating', 'client')
     api.use('blaze-html-templates', 'client')
     api.addFiles('template.html', 'client');
